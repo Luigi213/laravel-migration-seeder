@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models;
+use App\Models\Train;
 
 class ControllerTrain extends Controller
 {
     public function index(){
-        return view('train_home');
+        $trains = Train::all();
+
+        return view('train_home', compact('trains'));
     }
 }

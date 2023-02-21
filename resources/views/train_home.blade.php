@@ -18,10 +18,44 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    cioa
-                    
-                </div>
+                @foreach ($trains as $train)
+                    <div class="col-3 py-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">{{ $train['id']}}</h1>
+                                <div class="card-text">
+                                    <div>
+                                        <span>Nome azienda: </span>{{ $train['nome_azienda']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome stazione di partenza: </span>{{ $train['stazione_di_partenza']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome stazione di arrivo: </span>{{ $train['stazione_di_arrivo']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome orario di partenza: </span>{{ $train['orario_di_partenza']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome orario di arrivo: </span>{{ $train['orario_di_arrivo']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome codice treno: </span>{{ $train['codice_treno']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome numero di carozze: </span>{{ $train['numero_di_carozze']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome in orario: </span>{{ $train['in_orario']}}
+                                    </div>
+                                    <div>
+                                        <span>Nome cancellato: </span>{{ $train['cancellato']}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </body>
