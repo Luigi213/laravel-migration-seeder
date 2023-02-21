@@ -28,28 +28,28 @@
                                         <span>Nome azienda: </span>{{ $train['nome_azienda']}}
                                     </div>
                                     <div>
-                                        <span>Nome stazione di partenza: </span>{{ $train['stazione_di_partenza']}}
+                                        <span>Stazione di partenza: </span>{{ $train['stazione_di_partenza']}}
                                     </div>
                                     <div>
-                                        <span>Nome stazione di arrivo: </span>{{ $train['stazione_di_arrivo']}}
+                                        <span>Stazione di arrivo: </span>{{ $train['stazione_di_arrivo']}}
                                     </div>
                                     <div>
-                                        <span>Nome orario di partenza: </span>{{ $train['orario_di_partenza']}}
+                                        <span>Orario di partenza: </span>{{ $train['orario_di_partenza']}}
                                     </div>
                                     <div>
-                                        <span>Nome orario di arrivo: </span>{{ $train['orario_di_arrivo']}}
+                                        <span>Orario di arrivo: </span>{{ $train['orario_di_arrivo']}}
                                     </div>
                                     <div>
-                                        <span>Nome codice treno: </span>{{ $train['codice_treno']}}
+                                        <span>Codice treno: </span>{{ $train['codice_treno']}}
                                     </div>
                                     <div>
-                                        <span>Nome numero di carozze: </span>{{ $train['numero_di_carozze']}}
+                                        <span>Numero di carozze: </span>{{ $train['numero_di_carozze']}}
                                     </div>
                                     <div>
-                                        <span>Nome in orario: </span>{{ $train['in_orario']}}
+                                        <span>In orario: </span>{{ $train['in_orario']}}
                                     </div>
                                     <div>
-                                        <span>Nome cancellato: </span>{{ $train['cancellato']}}
+                                        <span>Cancellato: </span>{{ $train['cancellato']}}
                                     </div>
                                 </div>
                             </div>
