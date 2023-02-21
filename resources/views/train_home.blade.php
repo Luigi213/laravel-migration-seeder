@@ -25,31 +25,39 @@
                                 <h1 class="card-title">{{ $train['id']}}</h1>
                                 <div class="card-text">
                                     <div>
-                                        <span>Nome azienda: </span>{{ $train['nome_azienda']}}
+                                        <span class="fw-semibold">Nome azienda: </span>{{ $train['nome_azienda']}}
                                     </div>
                                     <div>
-                                        <span>Stazione di partenza: </span>{{ $train['stazione_di_partenza']}}
+                                        <span class="fw-semibold">Stazione di partenza: </span>{{ $train['stazione_di_partenza']}}
                                     </div>
                                     <div>
-                                        <span>Stazione di arrivo: </span>{{ $train['stazione_di_arrivo']}}
+                                        <span class="fw-semibold">Stazione di arrivo: </span>{{ $train['stazione_di_arrivo']}}
                                     </div>
                                     <div>
-                                        <span>Orario di partenza: </span>{{ $train['orario_di_partenza']}}
+                                        <span class="fw-semibold">Orario di partenza: </span>{{ $train['orario_di_partenza']}}
                                     </div>
                                     <div>
-                                        <span>Orario di arrivo: </span>{{ $train['orario_di_arrivo']}}
+                                        <span class="fw-semibold">Orario di arrivo: </span>{{ $train['orario_di_arrivo']}}
                                     </div>
                                     <div>
-                                        <span>Codice treno: </span>{{ $train['codice_treno']}}
+                                        <span class="fw-semibold">Codice treno: </span>{{ $train['codice_treno']}}
                                     </div>
                                     <div>
-                                        <span>Numero di carozze: </span>{{ $train['numero_di_carozze']}}
+                                        <span class="fw-semibold">Numero di carozze: </span>{{ $train['numero_di_carozze']}}
                                     </div>
                                     <div>
-                                        <span>In orario: </span>{{ $train['in_orario']}}
+                                        @if ($train['in_orario'] == 1)
+                                        <span class="fw-semibold">In orario: </span><span>SI</span>
+                                        @else
+                                        <span class="fw-semibold">In orario: </span><span>NO</span>
+                                        @endif
                                     </div>
                                     <div>
-                                        <span>Cancellato: </span>{{ $train['cancellato']}}
+                                        @if ($train['cancellato'] == 1)
+                                        <span class="fw-semibold">Cancellato: </span><span>SI</span>
+                                        @else
+                                        <span class="fw-semibold">Cancellato: </span><span>NO</span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
