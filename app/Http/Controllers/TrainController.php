@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Train;
 
-class ControllerTrain extends Controller
+class TrainController extends Controller
 {
     public function index(){
         $trains = Train::all();

@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use App\Models\Train;
 
-class TrainInfo extends Seeder
+class TrainSeeder extends Seeder
 {
     /**
      * Run the database seeds.
